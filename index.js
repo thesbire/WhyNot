@@ -6,9 +6,13 @@ client.on('message', msg => {
     if (msg.content === ':ping') {
         msg.channel.send('PoNg!');
     };
-    client.on('message', msg => {
-        if (msg.content === ':start'){
-          var role= msg.guild.roles.id('696073072880517180')
-          msg.author.add.Role(role)
-        }})});
+
+    if (msg.content === ':start') {
+        msg.guild.roles.fetch('696073072880517180')
+        .then(role => {
+            msg.member.roles.add(role);
+        });
+    };
+
+});
 client.login('Nana');
