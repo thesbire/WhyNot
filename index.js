@@ -11,4 +11,4 @@ client.on('message', msg => {
           var role= message.guild.roles.id('696073072880517180')
           msg.author.add.Role(role)
         }})});
-client.login('Njk1MzM3ODg1ODU5MDUzNzQx.XojENA.1WavMU9jjbHmvRDnGy0bcCkAK80');
+client.login('Nana');
