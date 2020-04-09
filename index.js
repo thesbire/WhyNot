@@ -8,7 +8,7 @@ client.on('message', msg => {
     };
     client.on('message', msg => {
         if (msg.content === ':start'){
-          var role= message.guild.roles.id('696073072880517180')
+          var role= msg.guild.roles.id('696073072880517180')
           msg.author.add.Role(role)
         }})});
 client.login('Nana');
