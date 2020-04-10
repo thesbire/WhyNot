@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const guild = ('guildId');
+const guild = ('695119331109109791');
 const client = new Discord.Client();
 client.on('message', msg => {
     if (msg.content === ':ping') {
@@ -410,7 +410,15 @@ client.on('message', msg => {
         msg.guild.roles.fetch('695339804472377386')//e5p10
         .then(role =>{
             msg.member.roles.add(role);
-            msg.member.roles.remove('');//e5p10
+            msg.member.roles.remove('695339802706575542');//e5p9
+        });
+    };
+    if (msg.content === ':lose') {
+        msg.guild.roles.fetch('697860866993029170')//e5p10
+        .then(role =>{
+            msg.member.roles.add(role);
+            msg.member.roles.remove('695122215645216769');//e2p9
+            msg.member.roles.remove('695339804472377386');//e5p10
         });
     };
 });
